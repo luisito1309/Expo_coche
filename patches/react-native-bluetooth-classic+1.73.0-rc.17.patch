@@ -1,0 +1,14 @@
+diff --git a/node_modules/react-native-bluetooth-classic/android/build.gradle b/node_modules/react-native-bluetooth-classic/android/build.gradle
+index 0daf907..f7f768c 100644
+--- a/node_modules/react-native-bluetooth-classic/android/build.gradle
++++ b/node_modules/react-native-bluetooth-classic/android/build.gradle
+@@ -31,6 +31,9 @@ android {
+         targetSdkVersion getExtOrDefault('targetSdkVersion', 34)
+         versionCode 1
+         versionName "1.0"
++    }
++        buildFeatures {
++        buildConfig = true
+     }
+     lintOptions {
+         abortOnError false
